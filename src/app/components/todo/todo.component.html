@@ -10,7 +10,7 @@
                             <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
                             <mat-hint>Add Task Name</mat-hint>
                           </mat-form-field>
-                          <button mat-raised-button color="primary"  *ngIf="!isEditEnabled" (click)="addTask()" [disabled]="todoForm.invalid"> Add</button>
+                          <button mat-raised-button color="primary"  class="add-button" *ngIf="!isEditEnabled" (click)="addTask()" [disabled]="todoForm.invalid"> Add</button>
                           <button mat-raised-button color="primary" *ngIf="isEditEnabled" (click)="updateTask()" [disabled]="todoForm.invalid"> Update</button>
 
                     </form>
